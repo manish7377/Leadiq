@@ -36,6 +36,59 @@
                 margin-top:5%;
                 
             }
+            #nav_bar{
+              width: 100%;
+              height: 105px;
+              padding: 2% 0% 6%;
+              position: fixed;
+              background-color: white;
+            
+         }
+         .nav_left{
+             float: left;
+             padding-left: 5%;
+             padding-bottom: 2%;
+         }
+         .nav_right{
+             display: flex;
+             float: right;
+             padding-right: 10%;
+             padding-top: 1%;
+           
+         }
+         .nav_right>div{
+             margin-top: 10px;
+             width: 100px;
+             text-align: center;
+             color: black;
+         }
+         .nav_right>div:last-child{
+             margin: 0%;
+         }
+         .nav_right button{
+             background-color: #00d586;
+             color: white;
+             width: 150px;
+             height: 35px;
+             font-size: 17px;
+             border-radius: 15px;
+             border: 1px solid #00d586;
+         }
+         .nav_right a{
+            text-decoration: inherit;
+            color: black;
+            font-size: 17px;
+            font-family: Roboto, sans-serif;
+         }
+         .nav_bottom{
+             display: flex;
+         }
+         .nav_bottom>div{
+             width: 100%;
+             height: 3px;
+             clear: both;
+             margin: 1px;
+         }
     .customer2{
         border: 1px;
        width: 100%;
@@ -238,6 +291,30 @@
     </style>
 </head>
 <body>
+    <div id="nav_bar">
+            
+        <div class="nav_left">
+            <div><a href="home.html"><img src="https://leadiq.com/images/leadIQ.svg" alt=""></a></div>
+        </div>
+
+        <div class="nav_right">
+            <div><a href="http://">Product</a></div>
+            <div><a href="http://">Pricing</a></div>
+            <div><a href="http://">Customers</a></div>
+            <div><a href="http://">Privacy</a></div>
+            <div><a href="http://">Academy</a></div>
+            <div><a href="http://">Login</a></div>
+            <div><button>Get Started</button></div>
+        </div>
+
+
+        <div style="clear: both;" class="nav_bottom">
+            <img src="https://leadiq.com/images/longLine.svg" alt="">
+        </div>
+
+    </div>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
     <div class="customer1">
         
             
