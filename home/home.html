@@ -69,13 +69,14 @@
          }
          #cont_1>div:nth-child(1){
              grid-area: left;
-             padding-top: 20vw;  
+             padding-top: 20vw; 
+             line-height: 30px; 
          }
          #cont_1>div:nth-child(2){
              grid-area: right;
              /* overflow-x: hidden;   */
          }
-         #cont_1 h1,h3{
+         #cont_1 h1,p{
              font-family: Vusemod, sans-serif;
              color: #063c4d;
          }
@@ -83,14 +84,14 @@
             height: 600px;
             width: 800px;
          }
-         #cont_1>div>a{
+         #cont_1>div>a,#cont_5>div>a,#cont_7>div>a{
             text-decoration: none;
          }
-         #cont_1>div>a>div{
+         #cont_1>div>a>div,#cont_5>div>a>div,#cont_7>div>a>div{
            
              background-color: #00d586;
              height: 60px;
-             width: 80%;
+             width: 270px;
              text-align: center;
              font-size: 25px;
              border-radius: 30px;
@@ -127,6 +128,120 @@
              width: 100px;
              height: 100px;
          }
+         #cont_5{
+             margin-top: 5vw;
+             display: grid;
+            grid-template: "left right";
+            gap: 30px;
+            padding-left: 10%;
+         }
+         #cont_5>div:nth-child(2){
+             background-image: url(https://leadiq.com/images/Fact-1-Bg.svg);
+         }
+         #cont_5>div:nth-child(1){
+             padding-top: 7vw;
+             font-family: Vusemod, sans-serif;
+             color: #063c4d;
+             line-height: 30px;
+         }
+         #cont_6{
+             display: flex;
+             width: 80%;
+             margin: auto;
+             margin-top: 5vw;
+         }
+         #cont_6>img{
+             height: 4vw;
+         }
+         #cont_7{
+             margin-top: 5vw;
+             display: grid;
+            grid-template: "left right";
+            gap: 30px;
+            padding-left: 3%;
+         }
+         #cont_7>div:nth-child(1){
+             background-image: url(https://leadiq.com/images/Fact-2-BG.svg);
+         }
+         #cont_7>div:nth-child(2){
+             padding-top: 7vw;
+             font-family: Vusemod, sans-serif;
+             color: #063c4d;
+             line-height: 33px;
+         }
+         #cont_8{
+             background-image: url(https://leadiq.com/images/Bar-of-shapes.svg);
+             height: 4vw;
+             width: 100%;
+             margin-top: 5vw;
+             
+         }
+         #cont_8{
+             background-image: url(https://leadiq.com/images/webAppBackground.png);
+             height: 55vw;
+             width: 75%;
+             margin: auto;
+             margin-top: 3vw;
+             padding-top: 45vw;
+         }
+             #cont_9>a>div{
+            background-color: #00d586;
+             height: 60px;
+             width: 270px;
+             font-size: 25px;
+             border-radius: 30px;
+             padding-top: 15px;
+             color: #ffffff;
+             word-wrap: normal;
+             font-family: Vusemod, sans-serif; 
+             margin: auto;
+         }
+         #cont_9{
+             text-align: center;
+             margin-top: 7vw;
+             font-size: 20px;
+             font-family: Vusemod, sans-serif; 
+             color: #063c4d;
+         }
+         a{
+             text-decoration: none;
+         }
+         #footer{
+             margin-top: 5vw;
+             background-color: #fafafa;
+             padding-top: 4vw;
+
+         }
+        .footer_div{
+             display: flex; 
+             width: 80%;
+             margin: auto;
+         }
+         .footer_div>div:nth-child(1){
+             width: 25%;    
+         }
+         .footer_div>div:nth-child(2),.footer_div>div:nth-child(3){
+             width: 18%;
+             font-size: 20px; 
+             line-height: 30px;  
+         }
+         .footer_div>div:nth-child(3){
+             width: auto;
+         }
+        #footer>div:nth-child(2){
+            text-align: center;
+        }
+        #blogs{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #footer a{
+            font-family: Vusemod, sans-serif; 
+             color: #063c4d;
+        }
+
+     
+
       
 
 
@@ -141,9 +256,9 @@
             </div>
 
             <div class="nav_right">
-                <div><a href="http://">Product</a></div>
-                <div><a href="http://">Pricing</a></div>
-                <div><a href="http://">Customers</a></div>
+                <div><a href="http://127.0.0.1:5500/product/product.html">Product</a></div>
+                <div><a href="http://127.0.0.1:5500/pricing/pricing.html">Pricing</a></div>
+                <div><a href="http://127.0.0.1:5500/customers/customers.html">Customers</a></div>
                 <div><a href="http://">Privacy</a></div>
                 <div><a href="http://">Academy</a></div>
                 <div><a href="http://">Login</a></div>
@@ -160,7 +275,7 @@
         <div id="cont_1">
             <div>
                 <h1>Close Deals <br>Faster</h1><br>
-                <h3>Your sales reps will reach the right<br> prospects faster with LeadIQ. <br>Management loves the transparency<br> of our dashboard.</h3><br>
+                <p>Your sales reps will reach the right<br> prospects faster with LeadIQ. <br>Management loves the transparency<br> of our dashboard.</p><br>
                 <a href="http://"><div>Get Started</div></a>
             </div>
             <div><img src="https://leadiq.com/images/Abstract9.png" alt="hero"></div>
@@ -193,10 +308,100 @@
 
 
         <div id="cont_5">
-            <div></div>
-            <div></div>
+            <div>
+                <h1>Improve Sales Velocity</h1><br>
+                <p>Prospect while you browse LinkedIn or any other site. When<br> you've found your desired lead, one button sends their contact<br> info to all of your favorite sales tools. We integrate<br> with Salesforce, Outreach, SalesLoft, and many more.</p><br>
+
+                <a href="http://"><div>Get Started</div></a>
+            </div>
+            <div><img src="https://leadiq.com/images/Fact1_Foreground-p-500.png" alt="hero"></div>
+        </div>
+
+        <div id="cont_6">
+            <img src="https://leadiq.com/images/Oval-Copy-12.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-13.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-14.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-15.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-16.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-21.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-19.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-12.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-13.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-14.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-15.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-16.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-21.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-19.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-14.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-15.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-16.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-21.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-19.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-15.png" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-16.png" alt="">
+            
+        </div>
+         
+        <div id="cont_7">
+            <div><img src="https://leadiq.com/images/Fact-2-foreground-p-500.png" alt="hero"></div>
+            <div>
+                <h1>Transparency For <br>Management</h1><br>
+                <p>Our dashboard allows managers a bird's eye view of<br> their team's prospecting. Review performance by<br> quantity or location. Connect the dots between<br> prospecting and closed deals.</p><br>
+
+                <a href="http://"><div>Get Started</div></a>
+            </div>
+            
 
         </div>
+        <div id="cont_8">
+            <img src="https://leadiq.com/images/outreachIcon.png" alt="">
+            <img src="https://leadiq.com/images/salesLoftIcon.png" alt="">
+            <img src="https://leadiq.com/images/googleDriveIcon.png" alt="">
+            <img src="https://leadiq.com/images/gmailIcon.png" alt="">
+            <img src="https://leadiq.com/images/Hubspot-Icon.png" alt="">
+           
+        </div>
+
+        <div id="cont_9">
+            <h2>Your Leads. Everywhere You Want Them. With<br> One Click.</h2><br>
+            <p>No matter what sales software you use, we believe your leads<br> should get there in one click. That's why we're constantly working to<br> integrate with other sales softwares. We don't believe you should<br> copy data from one system to another - ever.</p><br>
+
+            <a href="http://"><div>Get Started</div></a>
+        </div>
+
+       <div id="footer">
+        <div class="footer_div">
+            <div>
+                <a href="http://"><img src="https://leadiq.com/images/leadIQ.svg" alt=""></a><br><br>
+                <p>1-888-6LEADIQ</p>
+                <p>(1-888-653-2347)</p>
+                <p>support@leadiq.com</p><br>
+                <a href="http://"><img src="https://leadiq.com/images/001-facebook-logo.svg" width="50px" alt=""></a>
+                <a href="http://"><img src="https://leadiq.com/images/002-linkedin.svg" width="50px" alt=""></a>
+                <a href="http://"><img src="https://leadiq.com/images/003-youtube.svg" width="50px" alt=""></a>
+                <a href="http://"><img src="https://leadiq.com/images/004-twitter.svg" width="50px" alt=""></a>
+            </div>
+            <div>
+                <a href="#">Pricing</a ><br>
+                <a href="#">Blog</a ><br>
+                <a href="#">Careers</a ><br>
+                <a href="#">Privacy Policy</a ><br>
+                <a href="#">Terms of Use</a ><br>
+                <a href="#">Security</a ><br>
+            </div>
+            <div>
+                <p id="blogs">Recent Blogs</p>
+                <a href="#">How to Get Prospects to Accept Your LinkedIn Connection Request</a><br>
+                <a href="#">Why Sales Reps Should Stop Introducing Yourself in Cold Emails</a><br>
+                <a href="#">An Inside Look on how LeadIQ gets their total Data</a><br>
+            </div>    
+        </div>
+    
+        
+        <div>
+            Copyright © 2020 LeadIQ. All rights reserved
+        </div>
+    </div>
 
 
 
