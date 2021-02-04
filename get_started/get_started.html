@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+                box-sizing: border-box;
+            }
+         #nav_bar{
+              width: 100%;
+              height: 105px;
+              padding: 2% 0% 6%;
+              position: fixed;
+              background-color: white;
+            
+         }
+         .nav_left{
+             float: left;
+             padding-left: 5%;
+             padding-bottom: 2%;
+         }
+         .nav_right{
+             display: flex;
+             float: right;
+             padding-right: 10%;
+             padding-top: 1%;
+           
+         }
+         .nav_right>div{
+             margin-top: 10px;
+             width: 100px;
+             text-align: center;
+             color: black;
+         }
+         .nav_right>div:last-child{
+             margin: 0%;
+         }
+         .nav_right button{
+             background-color: #00d586;
+             color: white;
+             width: 150px;
+             height: 35px;
+             font-size: 17px;
+             border-radius: 15px;
+             border: 1px solid #00d586;
+         }
+         .nav_right a{
+            text-decoration: inherit;
+            color: black;
+            font-size: 17px;
+            font-family: Roboto, sans-serif;
+         }
+         .nav_bottom{
+             display: flex;
+         }
+         .nav_bottom>div{
+             width: 100%;
+             height: 3px;
+             clear: both;
+             margin: 1px;
+         }
+         a{
+             text-decoration: none;
+         }
+         #footer{
+             margin-top: 5vw;
+             background-color: #fafafa;
+             padding-top: 4vw;
+             padding-bottom: 2vw;
+
+         }
+        .footer_div{
+             display: flex; 
+             width: 80%;
+             margin: auto;
+         }
+         .footer_div>div:nth-child(1){
+             width: 25%;    
+         }
+         .footer_div>div:nth-child(2),.footer_div>div:nth-child(3){
+             width: 18%;
+             font-size: 20px; 
+             line-height: 30px;  
+         }
+         .footer_div>div:nth-child(3){
+             width: auto;
+         }
+        #footer>div:nth-child(2){
+            text-align: center;
+        }
+        #blogs{
+            font-size: 15px;
+            font-weight: bold;
+            color: #063c4d;
+            font-family: Vusemod, sans-serif;
+        }
+        #footer a{
+            font-family: Vusemod, sans-serif; 
+             color: #063c4d;
+        }
+        #cont_1{
+            background-color: #063c4d;
+            color: white;
+            padding-top: 6vw;
+            padding-left: 25%;
+            padding-bottom: 5vw;
+            font-family: Vusemod, sans-serif; 
+            font-size: 20px;
+        }
+        form{
+            padding-top: 3vw;
+            width: 70%;
+            margin: auto;
+        }
+        form>label{
+            font-size: 20px;
+            font-family: Vusemod, sans-serif;
+        }
+        form>input,select{
+            border:1px solid skyblue;
+            width: 100%;
+            height: 3vw;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            background: rgb(231, 237, 240);
+            border-radius: 4px;
+            font-size: 17px;
+        }
+        button{
+            background-color: #00d586;
+            border: #00d586;
+            height: 3vw;
+            width: 100px;
+            font-family: Vusemod, sans-serif;
+            font-size: 15px;
+            color: white;
+            border-radius: 3px;
+        }
+
+        
+
+        </style>
+    </head>
+    <body>
+        <div id="nav_bar">
+            
+            <div class="nav_left">
+                <div><a href="http://127.0.0.1:5500/home/home.html"><img src="https://leadiq.com/images/leadIQ.svg" alt=""></a></div>
+            </div>
+
+            <div class="nav_right">
+                <div><a href="http://127.0.0.1:5500/product/product.html">Product</a></div>
+                <div><a href="http://127.0.0.1:5500/pricing/pricing.html">Pricing</a></div>
+                <div><a href="http://127.0.0.1:5500/customers/customers.html">Customers</a></div>
+                <div><a href="http://">Privacy</a></div>
+                <div><a href="http://">Academy</a></div>
+                <div><a href="http://">Login</a></div>
+                <div><button>Get Started</button></div>
+            </div>
+
+            <div style="clear: both;" class="nav_bottom">
+                <img src="https://leadiq.com/images/longLine.svg" alt="">
+            </div>
+
+        </div>
+        <br><br><br><br><br><br>
+        <div id="cont_1">
+            <h2>Get Started</h2><br><br><br>
+            <div>Fill out the form below and we'll get back to you shortly.</div>
+        </div>
+
+        <form>
+            <label for="first_name">First name</label><br>
+            <input type="text" id="first_name"><br>
+            <label for="last_name">Last name</label><br>
+            <input type="text" id="last_name"><br>
+            <label for="email">Bussiness email</label><br>
+            <input type="email" id="email"><br>
+            <label for="company" >Company name</label><br>
+            <input type="text" id="company" ><br>
+            <label for="number">Mobile number</label><br>
+            <input type="number" id="number"><br>
+            <label for="title">What best describes your title</label><br>
+            <select name="" id=""><br>
+                <option value="">Please Select</option>
+                <option value="">Indivisual contributer</option>
+                <option value="">Manager</option>
+                <option value="">Director</option>
+                <option value="">C-level</option>
+                <option value="">VP/President</option>
+            </select><br>
+            <label for="responsibility">What is your primary responsibility</label><br>
+            <select name="" id="">
+                <option value="">Please Select</option>
+                <option value="">Closer(AE,AM,etc)</option>
+                <option value="">Qualifier(SDR,BDR,etc)</option>
+                <option value="">Sales Leadership</option>
+                <option value="">Sales Enablement</option>
+                <option value="">Sales Development</option>
+                <option value="">Marketing Ops</option>
+                <option value="">Marketing</option>
+                <option value="">Others</option>
+            </select><br>
+            <button>Submit</button>
+        </form>
+
+
+
+
+
+
+
+        <div id="footer">
+            <div class="footer_div">
+                <div>
+                    <a href="http://"><img src="https://leadiq.com/images/leadIQ.svg" alt=""></a><br><br>
+                    <p>1-888-6LEADIQ</p>
+                    <p>(1-888-653-2347)</p>
+                    <p>support@leadiq.com</p><br>
+                    <a href="http://"><img src="https://leadiq.com/images/001-facebook-logo.svg" width="50px" alt=""></a>
+                    <a href="http://"><img src="https://leadiq.com/images/002-linkedin.svg" width="50px" alt=""></a>
+                    <a href="http://"><img src="https://leadiq.com/images/003-youtube.svg" width="50px" alt=""></a>
+                    <a href="http://"><img src="https://leadiq.com/images/004-twitter.svg" width="50px" alt=""></a>
+                </div>
+                <div>
+                    <a href="#">Pricing</a ><br>
+                    <a href="#">Blog</a ><br>
+                    <a href="#">Careers</a ><br>
+                    <a href="#">Privacy Policy</a ><br>
+                    <a href="#">Terms of Use</a ><br>
+                    <a href="#">Security</a ><br>
+                </div>
+                <div>
+                    <p id="blogs">Recent Blogs</p>
+                    <a href="#">How to Get Prospects to Accept Your LinkedIn Connection Request</a><br>
+                    <a href="#">Why Sales Reps Should Stop Introducing Yourself in Cold Emails</a><br>
+                    <a href="#">An Inside Look on how LeadIQ gets their total Data</a><br>
+                </div>    
+            </div>
+        
+            
+            <div>
+                Copyright © 2020 LeadIQ. All rights reserved
+            </div>
+        </div>
+    </body>
+</html>
