@@ -2,91 +2,114 @@
 <html lang="en">
 <head>
     <style>
-    .top-container, .fifth-cont {
-        display:flex;
-        border:1px solid red;
-        height:20vh;
-        margin:1%;
-
+         *{
+                padding: 0%;
+                margin: 0%;
+                box-sizing: border-box;
+            }
+    .product-section{
+        float: left;
+        height: 700px;
+        width: 100%;
+        background-image: url("https://leadiq.com/images/ProductHeroBg_1.png");
+        border: 2px solid red
     }
-    .top-container > div, .fifth-cont > div {
-        flex-basis: 10%;
-        border:2px solid orange
-    }
-    .second-container ,.third-container,.fourth-cont{
-        display:flex;
-        border: 1px solid purple;
-        height: 20vh;
-        margin: 0%;
-    }
-    .second-container > div,.third-container > div,.fourth-cont > div {
-        flex-basis: 10%;
-        border:2px solid black;
-        
-    }
-    .second-container > div:nth-child(4) {
-        flex-basis: 48%;
-        border:2px solid black;
-        height:20vh;
+    .text{
+        height: 200px;
+        width: 75%;
+        background-color: white;
+        margin: auto;
+        margin-top: 25%;
         text-align: center;
-        
+        color:black
     }
+    #id1 {
+  background-size: cover;
+}
+   
+   
     .second-page {
         display: flex;
-        border:2px solid black;
         margin:15% 8%;
         height:60vh;
+        font-size:20px;
+        font-family: roboto sans-serif;
+        border: 2px solid black;
+    }
+    .second-page > div:nth-child(2){
+        background-image: url("https://leadiq.com/images/ProductFact2ImageBG.png");
     }
     .second-page > div {
         flex-basis:50%;
-        border:1px solid red;
     }
-    .second-page img , .contact-info img, .target-line img {
+    .second-page img , .contact-info img, .target-line img, .picture-line img, .collaborate-page img {
         max-width: 100%;
         max-height: 100%;
     } 
-    .leadiq-people  {
+   .picture-line {
         display: flex;
+   }
+   .dashboard {
+       display: flex;
+       margin:10% 25% 2% 25%;
+   }
+   .secondbreak {
+        height: 100%;
+        width: 100%;    
+    }
+    a{
+             text-decoration: none;
+         }
+         .second-page>div>a>div, .contact-info>div>a>div, .birds>div>a>div, .collaborate-page>div>a>div, 
+         .product-section>div>a>div{
+           
+           background-color: #00d586;
+           height: 60px;
+           width: 270px;
+           text-align: center;
+           font-size: 25px;
+           border-radius: 30px;
+           padding-top: 15px;
+           color: #ffffff;
+           word-wrap: normal;
+           font-family: Vusemod, sans-serif;
+       }
+
+    .leadiq-people  {
+        display:flex;
     } 
     .leadiq-people-cont {
         display: flex;
         height:15vh;
-        border: solid green;
     }
     .contact-info {
         display: flex;
-        border:2px solid black;
         margin:15% 8%;
         height:60vh;
+        font-size: 20px;
     }
     .contact-info > div {
         flex-basis:50%;
-        border:1px solid red;
     }
     
     .collaborate-page {
         display:flex;
-        border:2px solid red;
         margin:15% 2%;
         height: 60vh;
     }
     .collaborate-page > div {
         flex-basis: 50%;
-        border:1px solid black;
     }
     .target-line {
         display:flex;
-        border:2px solid brown;
         margin:15% 8%;
         height:60vh;
     }
     .target-line > div {
         flex-basis: 50%;
-        border:1px solid green;
     }
     .birds {
         display: flex;
-        border:2px solid green;
         margin:15% 23%;
         padding:1%;
         height:40vh;
@@ -94,127 +117,103 @@
    .birds > div {
        text-align: center;
    }
+   .parent {
+                height: 100%;
+                width: 100%;
+            }
+    .parent > div {
+                width: 31%;
+                height: 31%;
+                float: left;
+                padding: 10px;
+        }
+    .parent > div > p {
+                text-align: left;
+        
+            }
+            #footer{
+             margin-top: 5vw;
+             background-color: #fafafa;
+             padding-top: 4vw;
+             padding-bottom: 2vw;
 
+         }
+        .footer_div{
+             display: flex; 
+             width: 80%;
+             margin: auto;
+         }
+         .footer_div>div:nth-child(1){
+             width: 25%;    
+         }
+         .footer_div>div:nth-child(2),.footer_div>div:nth-child(3){
+             width: 18%;
+             font-size: 20px; 
+             line-height: 30px;  
+         }
+         .footer_div>div:nth-child(3){
+             width: auto;
+         }
+        #footer>div:nth-child(2){
+            text-align: center;
+        } 
+        #footer a{
+            font-family: Vusemod, sans-serif; 
+             color: #063c4d;
+        }
+  
 
     </style>
-</head>
-<body>
-    <div class = "top-container">
-        <div>
-            <img src="https://via.placeholder.com/100" alt="photo image">
-        </div>
-        <div></div>
-        <div></div>
-        <div> <img src="https://via.placeholder.com/100" alt="photo image"></div>
-        <div></div>
-        <div></div>
-        <div> <img src="https://via.placeholder.com/100" alt="photo image"></div>
-        <div></div>
-        <div></div>
-        <div> <img src="https://via.placeholder.com/100" alt="photo image"></div>
-        <div></div>
-        <div></div>
-        <div> <img src="https://via.placeholder.com/100" alt="photo image"></div>
-        <div></div>
+ 
+
+    <div class="product-section">
+       <div class = "text">
+        <h1 style = "text-align: center;" >LeadIQ Prospector</h1>
+       <h3 style="text-align: center;">It's fast. Find a lead on LinkedIn or another website. Save to <br> your favorite sales tools with one click.</h3>
+       <a href="http://127.0.0.1:5500/get_started/get_started.html"><div>Get Started</div></a>   
+    </div>
     </div>
 
+    <div style= "clear:both;" display = "flex"></div>
 
-    <div class = "second-container">
-        <div></div>
-        <div>
-            <img src="https://via.placeholder.com/100" alt="photo image">
-
-        </div>
-        <div></div>
-        <div>
-            <h1>LeadIQ Prospector</h1>
-            <p>It's fast. Find a lead on LinkedIn or another website. Save to <br>
-                your favorite sales tools with one click.</p>
-        </div>
-        <div>
-            <img src="https://via.placeholder.com/100" alt="photo image">
-        </div>
-        <div></div>
-        <div></div>
-        <div><img src="https://via.placeholder.com/100" alt="photo image"></div>
-
-        
-    </div>
-
-    <div class = "third-container">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div class ="fourth-cont">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        
-    </div>
-
-
-    <div class = "fifth-cont">
-        <div>
-            <img src="https://via.placeholder.com/100" alt="photo image">
-        </div>
-        <div></div>
-        <div></div>
-        <div> <img src="https://via.placeholder.com/100" alt="photo image"></div>
-        <div></div>
-        <div></div>
-        <div> <img src="https://via.placeholder.com/100" alt="photo image"></div>
-        <div></div>
-        <div></div>
-        <div> <img src="https://via.placeholder.com/100" alt="photo image"></div>
-        <div></div>
-        <div></div>
-        <div> <img src="https://via.placeholder.com/100" alt="photo image"></div>
-        <div></div>
-    </div>
 
 
     <div class = "second-page">
         <div><h1>Capture while you <br> 
             browse</h1>
-        <p>The LeadIQ Chrome Extension mirrors the list of <br> contacts you see on LinkedIn and greatly increases <br> the speed of pushing those leads to your sales tools</p></div>
+        <p>The LeadIQ Chrome Extension mirrors the list of <br> contacts you see on LinkedIn and greatly increases <br> the speed of pushing those leads to your sales tools</p>
+        <a href="http://127.0.0.1:5500/get_started/get_started.html"><div>Get Started</div></a>
+    </div>
+                
+        <div style => <img src="https://leadiq.com/images/ProductFact2ImageForground.png" alt="leadiq image">
+           
+        </div>
+       
+    </div>    
+    <div class="secondbreak">
         <div>
-            <img src="https://leadiq.com/images/ProductFact2ImageForground.png" alt="leadiq image">
+            <img src="https://leadiq.com/images/Oval-Copy-12.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-13.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-15.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-17.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-16.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-18.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-12.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-13.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-15.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-17.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-16.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-18.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-12.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-13.png" width="85px" alt="">
+            <img src="https://leadiq.com/images/Oval-Copy-15.png" width="85px" alt="">
         </div>
     </div>
-    <div class="leadiq-people">
-        <div class="leadiq-people-cont">
-            <img src="images/Oval-Copy-12.png" width="126" alt="" >
-            <img src="images/Oval-Copy-13.png" width="126" alt="" >
-            <img src="images/Oval-Copy-14.png" width="126" alt="" >
-            <img src="images/Oval-Copy-15.png" width="126" alt="" >
-            <img src="images/Oval-Copy-17.png" width="126" alt="" >
-            <img src="images/Oval-Copy-16.png" width="126" alt="" >
-            <img src="images/Oval-Copy-18.png" width="126" alt="" >
-            <img src="images/ryan.png" alt="" >
-            <img src="images/Oval-Copy-27.png" width="126" alt="" >
-            <img src="images/Oval-Copy-26.png" width="126" alt="" >
-            <img src="images/Oval-Copy-13.png" width="126" alt="" >
-            <img src="images/Oval-Copy-25.png" width="126" alt="" >
-            <img src="images/Oval-Copy-24.png" width="126" alt="" >
-            <img src="images/Oval-Copy-23.png" width="126" alt="" >
-            <img src="images/Oval-Copy-22.png" width="126" alt="" >
-            <img src="images/Oval-Copy-21.png" width="126" alt="" >
-            <img src="images/Oval-Copy-20.png" width="126" alt="" >
-            <img src="images/Oval-Copy-19.png" width="126" alt="" ></div>
-      </div>
       
     <div class = "contact-info">
         <div><h1>Contact Info You Can Trust <br> </h1>
-        <p>We're constantly working to improve our contact data<br> That means you can prospect without worry. Our verified <br> emails have a greater than 90% success rate</p></div>
+        <p>We're constantly working to improve our contact data<br> That means you can prospect without worry. Our verified <br> emails have a greater than 90% success rate</p>
+        <a href="http://127.0.0.1:5500/get_started/get_started.html"><div>Get Started</div></a></div>
         <div>
             <img src="https://leadiq.com/images/verticalColorBar.svg" alt="color">
             <img src="https://leadiq.com/images/ProductFact2ImageForground.png" alt="leadiq image">
@@ -223,15 +222,16 @@
            
     </div>
 
+
     
     <div class = "collaborate-page">
         <div>
-
+            <img src="https://leadiq.com/images/Fact-2-BG.svg" alt="">
         </div>
         <div>
             <h1>Collaborate & Sell More</h1>
             <p>Team plans allow you to see who on your team is already <br>prospecting a lead. Maybe someone is prospecting that<br> account but hasn't reached out to this person?</p>
-            
+            <a href="http://127.0.0.1:5500/get_started/get_started.html"><div>Get Started</div></a>
         </div>
     </div>
     <div class = "target-line">
@@ -244,15 +244,68 @@
             <img src="https://leadiq.com/images/captureAll-p-500.png" alt="sample photo">
         </div>
     </div>
+
+
+    <div class="picture-line">
+        <div>
+            <img src="https://leadiq.com/images/Bar-of-shapes.svg" alt="photo">
+        </div>
+    </div>
+
+
+    <div class = "dashboard">
+        <div>
+            <img src="https://leadiq.com/images/dashboard.jpg" alt="dashboard">
+        </div>
+    </div>   
+
     <div class = "birds">
         <div><h1>Bird's Eye View of Sales</h1>
             <p>Besides improving the speed of your sales reps, our second passion is making sure that management has 
                 the most insight possible into the activities that your sales team is involved in. What countries are they prospecting? What seniority? Who is the most active? </p>
+                <a href="http://127.0.0.1:5500/get_started/get_started.html"><div>Get Started</div></a>
         </div>
     </div>
     <div class = "birds-para">
         <div> </div>
         
     </div>
+
+    <div id="footer">
+        <div class="footer_div">
+            <div>
+                <a href="http://"><img src="https://leadiq.com/images/leadIQ.svg" alt=""></a><br><br>
+                <p>1-888-6LEADIQ</p>
+                <p>(1-888-653-2347)</p>
+                <p>support@leadiq.com</p><br>
+                <a href="http://"><img src="https://leadiq.com/images/001-facebook-logo.svg" width="50px" alt=""></a>
+                <a href="http://"><img src="https://leadiq.com/images/002-linkedin.svg" width="50px" alt=""></a>
+                <a href="http://"><img src="https://leadiq.com/images/003-youtube.svg" width="50px" alt=""></a>
+                <a href="http://"><img src="https://leadiq.com/images/004-twitter.svg" width="50px" alt=""></a>
+            </div>
+            <div>
+                <a href="#">Pricing</a ><br>
+                <a href="#">Blog</a ><br>
+                <a href="#">Careers</a ><br>
+                <a href="#">Privacy Policy</a ><br>
+                <a href="#">Terms of Use</a ><br>
+                <a href="#">Security</a ><br>
+            </div>
+            <div>
+                <p id="blogs">Recent Blogs</p>
+                <a href="#">How to Get Prospects to Accept Your LinkedIn Connection Request</a><br>
+                <a href="#">Why Sales Reps Should Stop Introducing Yourself in Cold Emails</a><br>
+                <a href="#">An Inside Look on how LeadIQ gets their total Data</a><br>
+            </div>    
+        </div>
+    
+        
+        <div>
+            Copyright © 2020 LeadIQ. All rights reserved
+        </div>
+    </div>
+
+
+
 </body>
 </html>
