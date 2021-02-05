@@ -2,6 +2,59 @@
 <html>
     <head>
         <style>
+            #nav_bar{
+              width: 100%;
+              height: 105px;
+              padding: 2% 0% 6%;
+              position: fixed;
+              background-color: white;
+            
+            }
+            .nav_left{
+                float: left;
+                padding-left: 5%;
+                padding-bottom: 2%;
+            }
+            .nav_right{
+                display: flex;
+                float: right;
+                padding-right: 10%;
+                padding-top: 1%;
+            
+            }
+            .nav_right>div{
+                margin-top: 10px;
+                width: 100px;
+                text-align: center;
+                color: black;
+            }
+            .nav_right>div:last-child{
+                margin: 0%;
+            }
+            .nav_right button{
+                background-color: #00d586;
+                color: white;
+                width: 150px;
+                height: 35px;
+                font-size: 17px;
+                border-radius: 15px;
+                border: 1px solid #00d586;
+            }
+            .nav_right a{
+                text-decoration: inherit;
+                color: black;
+                font-size: 17px;
+                font-family: Roboto, sans-serif;
+            }
+            .nav_bottom{
+                display: flex;
+            }
+            .nav_bottom>div{
+                width: 100%;
+                height: 3px;
+                clear: both;
+                margin: 1px;
+            }
             .main {
                 padding: 100px;
             }
@@ -11,26 +64,26 @@
             .first {
                 width: 98%;
                 height: 45%;
-                border: 1px solid red;
+                
                 
             }
             .first > div {
                 width: 48%;
                 height: auto;
-                border: 1px solid red;
+                
                 
             }
             .box {
                 width: 49%;
                 height: 100%;
-                border: 1px solid red;
+                
                 float: right;
                 background-color: aqua;
             }
             .box > div {
                 width: 30%;
                 height: auto;
-                border: 1px solid red;
+                
                 float: right;
             }
             
@@ -40,15 +93,74 @@
                 gap: 20px;
                 grid-template-columns: 200px 200px 200px 200px 200px;
                 grid-template-rows: 200px 200px;
-                border: 1px solid red;
+                
+            }
+            .cont1 {
+                justify-content: center;
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 200px 200px 200px 200px ;
+                grid-template-rows: 400px;
+                
             }
             article {
-                display: block;
+                /*display: block;*/
                 font-size: 29px;
+                float: left;
+            }
+            .parent {
+                height: 100%;
+                width: 100%;
+            }
+            .parent > div {
+                width: 31%;
+                height: 31%;
+                float: left;
+                padding: 10px;
+            }
+            .parent > div > p {
+                text-align: left;
+        
+            }
+            h2,h4,h3{
+                text-align: center;
             }
         </style>
     </head>
     <body>
+        <div id="nav_bar">
+            
+            <div class="nav_left">
+                <div><a href="home.html"><img src="https://leadiq.com/images/leadIQ.svg" alt=""></a></div>
+            </div>
+
+            <div class="nav_right">
+                <div><a href="http://">Product</a></div>
+                <div><a href="http://">Pricing</a></div>
+                <div><a href="http://">Customers</a></div>
+                <div><a href="http://">Privacy</a></div>
+                <div><a href="http://">Academy</a></div>
+                <div><a href="http://">Login</a></div>
+                <div><button>Get Started</button></div>
+            </div>
+
+            <div style="clear: both;" class="nav_bottom">
+                <img src="https://leadiq.com/images/longLine.svg" alt="">
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+
         <div class="main">
             <h1>LeadIQ Academy</h1>
             <p>A collection of content for qualifiers, closers, leaders, and everyone else involved in revenue generation.</p>
@@ -83,6 +195,147 @@
             <div></div>
             
         </div>
+        
+        <div class="cont">
+            <div>
+                <article class="article">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-ytMfBDlTcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>this says us all about the leadiq Watch the full video</p>
+                </article>
+            </div>
+            <div>
+                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2Fshutterstock_1762903226.jpg%23keepProtocol&size=1&version=1610465566&sig=735e3f19e90fd13c4d0249b3b822bbe1&default=hubs%2Ftilebg-blogs.jpg" width="200px" height="300px" alt="">
+                <p>Prosprized tag to increase the home width</p>
+                <a href="https://academy.leadiq.com/leadiq-academy/prospecting-hack-to-increase-personalized-outreach">read more</a>
+            </div>
+            <div>
+                <article class="article">
+                    <p>Want to stay on top of the latest in sales prospecting and productivity?</p>
+                    <p>Subscribe to Our Announcements!</p>
+                    <input type="text"><button>Email us</button>
+                </article>
+            </div>
+            <div>
+                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2FScreen%2520Shot%25202020-11-19%2520at%25202.05.25%2520PM.png%23keepProtocol&size=1&version=1610398353&sig=95b5f61584d8a08b56b33e91b9154a51&default=hubs%2Ftilebg-blogs.jpg" width="400px" alt="">
+                <a href="https://academy.leadiq.com/leadiq-academy/the-great-debate-inbound-vs-outbound">read</a>
+                <p>The great debet Inbound vs the-great-debate-inbound-vs-outbound</p>
+            </div>
+        </div>
+
+        <div class="cont">
+            <article class="article">
+                <p>Want to stay on top of the latest in sales prospecting and productivity?</p>
+                <p>Subscribe to Our Announcements!</p>
+                <input type="text"><button>Email us</button>
+            </article>
+            <div> <img src="https://content.cdntwrk.com/files/aT0xMzI2ODc0JnA9MCZ2ZXJzaW9uPTEmY21kPXYmc2lnPWMyYWE0ZmEzNTMwODdjMzRkOTIyMWZjYzNjY2IyOTBj/-w-320.jpg" width="300px" alt=""></div>
+            
+            <div> <a href="https://academy.leadiq.com/leadiq-academy/how-to-sell-in-2021"></a></div>
+            <div>
+                <article class="article">
+                    <p>sales operation what its matter</p>
+                    <a href="https://academy.leadiq.com/leadiq-academy/sales-operations-what-is-it-and-why-it-matters">2monthsago</a>
+                    <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2Fshutterstock_1176756661.png%23keepProtocol&size=1&version=1610381373&sig=498a83536dd0201c9305f82e93ae5749&default=hubs%2Ftilebg-blogs.jpg" width="200px" height="auto" alt="">
+                    <p>Subscribe to Our Announcements!</p>
+                </article>
+            </div>
+            <div>
+                <article>
+                    <p>Reps using LeadIQ complete 20% more revenue generating activities</p>
+                    <a href="https://academy.leadiq.com/leadiq-academy/episode-6-coaching-edition">more</a>
+                    <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fembed-ssl.wistia.com%2Fdeliveries%2F5a8e1e37885cb5c89ef4b617cd2f5b43a395fa10.jpg&size=1&version=1611078279&sig=60c8f2b05e17bc1beee6b4693c1b3faf&default=hubs%2Ftilebg-videos.jpg" width="200px" alt="">
+                </article>
+            </div>
+        </div>
+        <div class="cont">
+            <div >
+                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2FLinkedin.jpg%23keepProtocol&size=1&version=1610382918&sig=d87ec9892805121837132f4705f233a6&default=hubs%2Ftilebg-blogs.jpg" width="200px" height="300px" alt="">
+                <p>Linked alogorithum showd why sales forece is imporatnt</p>
+                <a href="https://academy.leadiq.com/leadiq-academy/linkedin-algorithm-explained-why-sales-managers-should-care">read-more</a>
+            </div>
+            <div>
+                <article class="article">
+                    <p>Want to stay on top of the latest in sales prospecting and productivity?</p>
+                    <p>Subscribe to Our Announcements!</p>
+                    <input type="text"><button>Email us</button>
+                </article>
+            </div>
+            <div>
+                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2Fwoman-wearing-white-shirt-1181690.jpg%23keepProtocol&size=1&version=1610382964&sig=19b5f2f0289e2ebf1ddf63a55f21d285&default=hubs%2Ftilebg-blogs.jpg" width="600px" alt="">
+                <p>How to attract women B2B sales force</p>
+                <a href="https://academy.leadiq.com/leadiq-academy/how-to-attract-women-to-b2b-sales-roles">6months ago</a>
+            </div>
+            
+        </div>
+        <div class="cont">
+            <div >
+                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2FScreen%2520Shot%25202020-10-29%2520at%25203.47.34%2520PM.png%23keepProtocol&size=1&version=1610398799&sig=5e40b98bae2f65cefe20bf0f8ff15c70&default=hubs%2Ftilebg-blogs.jpg" width="200px" height="300px" alt="">
+                <p>How to referals B2B in salesforce </p>
+                <a href="https://academy.leadiq.com/leadiq-academy/how-to-ask-for-referrals-in-b2b-sales">2months ago</a>
+            </div>
+            <div>
+                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2Fshutterstock_678225592.jpg%23keepProtocol&size=1&version=1610465630&sig=b2605ebfc3ffc041727da6393ff48bd7&default=hubs%2Ftilebg-blogs.jpg" width="200px" height="300px" alt="">
+                <a href="https://academy.leadiq.com/leadiq-academy/keeping-your-sales-team-motivated-finding-their-internal-genius">1month ago</a>
+                <p>Keep your salesforce memebers active and motivates finding the inside leaders</p>
+            </div>
+            <article class="article">
+                <p>Want to stay on top of the latest in sales prospecting and productivity?</p>
+                <p>Subscribe to Our Announcements!</p>
+                <input type="text"><button>Email us</button>
+            </article>
+            <div>
+                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2FDifferentiating%2520from%2520your%2520competiton-3.png%23keepProtocol&size=1&version=1610466938&sig=a11ae5918c010fb4614b6506b8c55a1d&default=hubs%2Ftilebg-blogs.jpg" width="300px" height="300px" alt="">
+                <a href="https://academy.leadiq.com/leadiq-academy/differentiating-you-from-your-competition">read-more</a>
+                <p>Diffrentiate you from everyone</p>
+                
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <article class="article">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-ytMfBDlTcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>this says us all about the leadiq Watch the full video</p>
+                </article>
+            </div>
+            <div>
+                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2Fshutterstock_1762903226.jpg%23keepProtocol&size=1&version=1610465566&sig=735e3f19e90fd13c4d0249b3b822bbe1&default=hubs%2Ftilebg-blogs.jpg" width="200px" height="300px" alt="">
+                <p>Prosprized tag to increase the home width</p>
+                <a href="https://academy.leadiq.com/leadiq-academy/prospecting-hack-to-increase-personalized-outreach">read more</a>
+            </div>
+            <div>
+                <article class="article">
+                    <p>Want to stay on top of the latest in sales prospecting and productivity?</p>
+                    <p>Subscribe to Our Announcements!</p>
+                    <input type="text"><button>Email us</button>
+                </article>
+            </div>
+            <div>
+                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2FScreen%2520Shot%25202020-11-19%2520at%25202.05.25%2520PM.png%23keepProtocol&size=1&version=1610398353&sig=95b5f61584d8a08b56b33e91b9154a51&default=hubs%2Ftilebg-blogs.jpg" width="400px" alt="">
+                <a href="https://academy.leadiq.com/leadiq-academy/the-great-debate-inbound-vs-outbound">read</a>
+                <p>The great debet Inbound vs the-great-debate-inbound-vs-outbound</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div >
+                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2FLinkedin.jpg%23keepProtocol&size=1&version=1610382918&sig=d87ec9892805121837132f4705f233a6&default=hubs%2Ftilebg-blogs.jpg" width="200px" height="300px" alt="">
+                <p>Linked alogorithum showd why sales forece is imporatnt</p>
+                <a href="https://academy.leadiq.com/leadiq-academy/linkedin-algorithm-explained-why-sales-managers-should-care">read-more</a>
+            </div>
+            <div>
+                <article class="article">
+                    <p>Want to stay on top of the latest in sales prospecting and productivity?</p>
+                    <p>Subscribe to Our Announcements!</p>
+                    <input type="text"><button>Email us</button>
+                </article>
+            </div>
+            <div>
+                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2Fwoman-wearing-white-shirt-1181690.jpg%23keepProtocol&size=1&version=1610382964&sig=19b5f2f0289e2ebf1ddf63a55f21d285&default=hubs%2Ftilebg-blogs.jpg" width="600px" alt="">
+                <p>How to attract women B2B sales force</p>
+                <a href="https://academy.leadiq.com/leadiq-academy/how-to-attract-women-to-b2b-sales-roles">6months ago</a>
+            </div>
+            
+        </div>
+
         <div class="cont">
             <div><img src="https://leadiq.com/images/alteryx.svg" alt=""> </div>
             <div> <img src="https://leadiq.com/images/showpad.svg" alt=""></div>
@@ -95,19 +348,37 @@
             <div><img src="https://leadiq.com/images/walkme.svg" alt=""></div>
             <div><img src="https://leadiq.com/images/launchdarkly.svg" alt=""></div>
         </div>
-        <div class="cont">
+
+        <div class="parent">
             <div>
-                <article class="article">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-ytMfBDlTcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p></p>
-                </article>
+                <img src="https://leadiq.com/images/leadIQ.svg" alt="">
+                <p>1-888-6LEADIQ</p>
+                <p>(1-888-653-2347)</p>
+                <p>support@leadiq.com</p>
+                <img src="https://leadiq.com/images/001-facebook-logo.svg" width="50px" alt="">
+                <img src="https://leadiq.com/images/002-linkedin.svg" width="50px" alt="">
+                <img src="https://leadiq.com/images/003-youtube.svg" width="50px" alt="">
+                <img src="https://leadiq.com/images/004-twitter.svg" width="50px" alt="">
             </div>
             <div>
-                <img src="https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fblog.leadiq.com%2Fhubfs%2Fshutterstock_1762903226.jpg%23keepProtocol&size=1&version=1610465566&sig=735e3f19e90fd13c4d0249b3b822bbe1&default=hubs%2Ftilebg-blogs.jpg" width="200px" alt="">
-                <p>Prosprized tag to increase the home width</p>
+                <p>Pricing</p>
+                <p>Blog</p>
+                <p>Careers</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>Security</p>
             </div>
-            <div></div>
-            <div></div>
+            <div>
+                <p>Recent Blogs</p>
+                <h3>How to Get Prospects to Accept Your LinkedIn Connection Request</h3>
+                <h3>Why Sales Reps Should Stop Introducing Yourself in Cold Emails</h3>
+                <h3>An Inside Look on how LeadIQ gets their total Data</h3>
+            </div>    
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2>Copyright © 2020 LeadIQ. All rights reserved</h2>
         </div>
     </body>
 </html>
