@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             *{
                 padding: 0%;
@@ -9,7 +10,7 @@
             }
          #nav_bar{
               width: 100%;
-              height: 105px;
+              height: 110px;
               padding: 2% 0% 6%;
               position: fixed;
               background-color: white;
@@ -27,6 +28,48 @@
              padding-top: 1%;
            
          }
+         .nav_right_option{
+             display: none;
+             float: right;
+             padding-right: 50%;
+             padding-top: 1%;  
+         }
+         .right_menu{
+               position: relative;
+               display: inline-block;
+               /* width: 200px; */
+           }
+           
+           .drop{
+               display: none;
+               position: absolute;
+               background-color: white;
+               min-width: 158px;
+               z-index: 1;
+           }
+           .drop a:hover{
+               color: green;
+           }
+           
+           .right_menu:hover .drop{
+                 display: block; 
+           }
+           
+           ul{
+               list-style: none;
+           }
+           li{
+               width: 100px;
+               height: 30px;
+               font-size: 20px;
+               font-family: Vusemod, sans-serif;
+           }
+           a{
+               text-decoration: none;
+               color: black;
+               font-size: 20px;   
+           }
+        
          .nav_right>div{
              margin-top: 10px;
              width: 100px;
@@ -83,8 +126,8 @@
              color: #063c4d;
          }
          #cont_1>div>img{
-            height: 600px;
-            width: 800px;
+            height: 100%;
+            width: 100%;
          }
          #cont_1>div>a,#cont_5>div>a,#cont_7>div>a{
             text-decoration: none;
@@ -139,7 +182,13 @@
          }
          #cont_5>div:nth-child(2){
              background-image: url(https://leadiq.com/images/Fact-1-Bg.svg);
+             
          }
+         #cont_5>div img{
+             height: 100%;
+             width: 100%;
+         }
+         
          #cont_5>div:nth-child(1){
              padding-top: 7vw;
              font-family: Vusemod, sans-serif;
@@ -165,6 +214,11 @@
          #cont_7>div:nth-child(1){
              background-image: url(https://leadiq.com/images/Fact-2-BG.svg);
          }
+         #cont_7>div img{
+             height: 100%;
+             width: 100%;
+         }
+
          #cont_7>div:nth-child(2){
              padding-top: 7vw;
              font-family: Vusemod, sans-serif;
@@ -172,11 +226,17 @@
              line-height: 33px;
          }
          #cont_8{
+             display: grid;
+             grid-template: "a b c d e";
              background-image: url(https://leadiq.com/images/Bar-of-shapes.svg);
              height: 4vw;
              width: 100%;
              margin-top: 5vw;
              
+         }
+         #cont_8 img{
+              width: 80%;
+              height: 80%;
          }
          #cont_8{
              background-image: url(https://leadiq.com/images/webAppBackground.png);
@@ -217,7 +277,8 @@
 
          }
         .footer_div{
-             display: flex; 
+             display: grid; 
+             grid-template: "a b c d";
              width: 80%;
              margin: auto;
          }
@@ -238,6 +299,9 @@
         #blogs{
             font-size: 15px;
             font-weight: bold;
+        }
+        .social_links{
+            display: flex;
         }
         #footer a{
             font-family: Vusemod, sans-serif; 
@@ -300,6 +364,7 @@
            background-color: rgb(234, 239, 245);
        }
        .performance{
+           margin-left: 20px;
            display: grid;
            grid-template: "1 2 3 4 5 6";
            box-sizing: border-box;
@@ -308,8 +373,56 @@
            width: 130px;
            height: 160px;
        }
-     
-
+       @media only screen and (max-width: 1010px){
+            .nav_right{
+               display: none; }
+               .nav_right_option{
+                   display: block;
+               }
+            }
+       @media only screen and (max-width: 600px){
+            .nav_right{
+                display: none;
+            }
+           #cont_1{
+               grid-template: "left" "right";
+           }
+           .client_logos{
+               grid-template: "box1 box2 box3" "box4 box5 box6" "box7 box8 box9";
+           }
+           #cont_5{
+               grid-template: "left" "right";
+           }
+           #cont_7{
+            grid-template: "right" "left" ; 
+           }
+           .performance{
+               grid-template: "1 2" "3 4" "5 6";
+           }
+           .footer_div{
+               grid-template: "1" "2" "3";
+           }
+       }
+       @media only screen and (max-width: 900px){
+           #cont_1{
+               grid-template: "left" "right";
+           }
+           .client_logos{
+               grid-template: "box1 box2 box3 box4" "box5 box6 box7 box8";
+           }
+           #cont_5{
+               grid-template: "left" "right";
+           }
+           #cont_7{
+            grid-template: "right" "left" ; 
+           }
+           .performance{
+               grid-template: "1 2 3" "4 5 6";
+           }
+           .footer_div{
+               grid-template: "1 2" "3";
+           }
+       }
       
 
 
@@ -331,6 +444,22 @@
                 <div><a href="http://127.0.0.1:5500/Academy/academy.html">Academy</a></div>
                 <div><a href="http://127.0.0.1:5500/login/login.html">Login</a></div>
                 <a id="get_start" href="http://127.0.0.1:5500/get_started/get_started.html"><div>Get Started</div></a>
+            </div>
+
+            <div class="nav_right_option">
+                <div class="right_menu">
+                    <div class="line3_div"><img height="30px" width="30px" src="https://www.freeiconspng.com/uploads/menu-icon-18.png" alt=""></div>
+                    <div class="drop">
+                    <ul>
+                       <li><a href="http://127.0.0.1:5500/product/product.html">Product</a></li>
+                       <li><a href="http://127.0.0.1:5500/pricing/pricing.html">Pricing</a></li>
+                       <li><a href="http://127.0.0.1:5500/customers/customers.html">Customers</a></li>
+                       <li><a href="http://127.0.0.1:5500/Academy/academy.html">Academy</a></li> 
+                       <!-- <li> <a id="get_start" href="http://127.0.0.1:5500/get_started/get_started.html"><div>Get Started</div></a></li> -->
+                    </ul>
+                    </div>
+                </div>
+
             </div>
 
             <div style="clear: both;" class="nav_bottom">
@@ -541,11 +670,11 @@
 
         </div>
         <div id="cont_8">
-            <img src="https://leadiq.com/images/outreachIcon.png" alt="">
-            <img src="https://leadiq.com/images/salesLoftIcon.png" alt="">
-            <img src="https://leadiq.com/images/googleDriveIcon.png" alt="">
-            <img src="https://leadiq.com/images/gmailIcon.png" alt="">
-            <img src="https://leadiq.com/images/Hubspot-Icon.png" alt="">
+           <div> <img src="https://leadiq.com/images/outreachIcon.png" alt=""></div>
+           <div> <img src="https://leadiq.com/images/salesLoftIcon.png" alt=""></div>
+            <div><img src="https://leadiq.com/images/googleDriveIcon.png" alt=""></div>
+        <div><img src="https://leadiq.com/images/gmailIcon.png" alt=""></div>
+            <div><img src="https://leadiq.com/images/Hubspot-Icon.png" alt=""></div>
            
         </div>
 
@@ -563,10 +692,12 @@
                 <p>1-888-6LEADIQ</p>
                 <p>(1-888-653-2347)</p>
                 <p>support@leadiq.com</p><br>
+               <div class="social_links">
                 <a href="http://"><img src="https://leadiq.com/images/001-facebook-logo.svg" width="50px" alt=""></a>
                 <a href="http://"><img src="https://leadiq.com/images/002-linkedin.svg" width="50px" alt=""></a>
                 <a href="http://"><img src="https://leadiq.com/images/003-youtube.svg" width="50px" alt=""></a>
                 <a href="http://"><img src="https://leadiq.com/images/004-twitter.svg" width="50px" alt=""></a>
+            </div>
             </div>
             <div>
                 <a href="#">Pricing</a ><br>
